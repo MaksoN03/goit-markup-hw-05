@@ -80,8 +80,6 @@ body {
 
 /*-------------- HEADER --------------*/
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -127,6 +125,12 @@ body {
 }
 
 .menu-link {
+    position: relative;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -251,11 +255,13 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition: color var(--transition-dur-and-func);
 }
 
 .social-footer-link:hover,
 .social-footer-link:focus{
     background-color: var(--primary-accent-color);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .social-footer-icon {
@@ -302,6 +308,8 @@ body {
     color: var(--primary-bg-color);
     width: 216px;
     height: 50px;
+    transition: background-color var(--transition-dur-and-func),
+        box-shadow var(--transition-dur-and-func);
 }
 
 .modal-open-btn:hover,
@@ -447,7 +455,14 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: #AFB1B8;
     background-color: var(--primary-bg-color);
+    transition: background-color var(--transition-dur-and-func);
+}
+
+.social-list-icon {
+    fill: currentColor;
+    transition: fill var(--transition-dur-and-func);
 }
 
 .social-list-link:hover,
@@ -475,7 +490,7 @@ body {
     align-items: center;
 }
 
-.clients-list-item {display: flex;
+.clients-list-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,6 +498,7 @@ body {
     height: 92px;
     border: 1px solid #AFB1B8 ;
     border-radius: 4px;
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .clients-link {
@@ -493,6 +509,7 @@ body {
     height: 100%;
     color: #AFB1B8;
     fill: currentColor;
+    transition: fill var(--transition-dur-and-func);
 }
 
 .clients-link:hover,
